@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    transition: all .3s ease;
+}
+
+.contenedor .active {
+    grid-template-columns: 300px auto;
+}
+
+/*Header*/
+.header {
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
+}
+
+.header .contenedor-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .contenedor-logo .btn-menu {
+	border: none;
+	padding: 10px;
+	background: none;
+	cursor: pointer;
+	font-size: 22px;
+	border-radius: 100px;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+}
+
+.header .contenedor-logo .btn-menu:hover{
+    background: #d8d0d0;
+}
+
+.header .contenedor-logo .logo .fas {
+	background: #ff0000;
+	padding: 7px 12px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #fff;
+	position: relative;
+	margin-right: 4px;
+}
+
+.header .contenedor-logo .logo {
+	font-family: cursive;
+	font-size: 20px;
+    position: relative;
+    top: -3px;
+}
+
+.header .barra-busqueda{
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busqueda input{
+    min-width: 50%;
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid beige ;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.header .barra-busqueda button{
+    height: 35px;
+    border: 1px solid beige;
+    border-left: none;
+    color: dimgrey;
+    background: #f8f8f8;
+    padding: 0px 25px;
+}
+
+.header .barra-busqueda button:hover{
+    background: #d8d0d0;
+}
+
+.header .barra-busqueda .btn-mic{
+    background: none;
+	border: none;
+    width: 40px;
+	height: 40px;
+    font-size: 20px;
+    padding: 7px 12px;
+    border-radius: 100px;
+    color: #828282;
+    cursor: pointer;
+}
+
+.header .botones-header{
+    grid-area: iconos;
+    display: flex;
+    align-items: center;
+}
+
+.header .botones-header button {
+	background: none;
+	border: none;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	padding: 7px 12px;
+	border-radius: 100px;
+	color: #828282;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.header .botones-header button:hover{
+    background: #d8d0d0;
+}
+
+.header .botones-header .avatar{
+    width: 40px;
+	height: 40px;
+    display: inline-block;
+}
+
+.header .botones-header .avatar img{
+    vertical-align: top;
+    width: 100%;
+    border-radius: 100px;
+}
+
+/*Menu Lateral*/
+.menu-lateral {
+    grid-area: menu;
+    background-color: brown;
+}
+
+.main {
+    grid-area: contenido;
+    background-color: rgb(196, 196, 68);
+}
+
