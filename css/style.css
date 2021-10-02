@@ -178,7 +178,7 @@ a{
 }
 
 .menu-lateral a .active{
-    background: #e5e5e5;
+    background: #161616;
     font-weight: bold;
 }
 
@@ -209,11 +209,25 @@ a{
     border-top: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
     height: 56px;
+    padding: 17px;
 }
 
 .menu-horizontal a{
     display: inline;
-    padding: 20px;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #d8d0d0;
+    border: 1px solid #8f8989ea;
+    border-top-right-radius: 32%;
+    border-bottom-right-radius: 32%;
+    border-top-left-radius: 32%;
+    border-bottom-left-radius: 32%;
+}
+
+.menu-horizontal a:hover{
+    background: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    border-radius: 15%;
 }
 
 .main {
