@@ -21,11 +21,12 @@ a{
     grid-template-columns: 90px auto;
     grid-template-rows: 60px auto;
     grid-template-areas: "header header"
+                         "menu horizontal"
                          "menu contenido";
     transition: all .3s ease;
 }
 
-.contenedor .active {
+.contenedor.active{
     grid-template-columns: 300px auto;
 }
 
@@ -48,12 +49,12 @@ a{
 }
 
 .header .contenedor-logo .btn-menu {
-	border: none;
+    border: none;
 	padding: 10px;
 	background: none;
 	cursor: pointer;
-	font-size: 22px;
-	border-radius: 100px;
+	font-size: 18px;
+	border-radius: 10px;
 	width: 50px;
 	height: 50px;
 	margin-right: 20px;
@@ -160,11 +161,79 @@ a{
 /*Menu Lateral*/
 .menu-lateral {
     grid-area: menu;
-    background-color: brown;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.menu-lateral a{
+    display: block;
+    padding: 15px 15px;
+    color: #000;
+    font-size: 12px;
+    border-radius: 12%;
+}
+
+.menu-lateral a:hover{
+    background: #e5e5e5;
+}
+
+.menu-lateral a .active{
+    background: #e5e5e5;
+    font-weight: bold;
+}
+
+.menu-lateral .fas{
+    color: #606060;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral .far{
+    color: #606060;
+    margin-right: 32px;
+    width: 20px;
+    text-align: center;
+}
+
+.menu-lateral  hr{
+    margin: 20px 0;
+    border: 1px solid #dfdfdf;
+}
+
+/*Contenido*/
+
+.menu-horizontal{
+    grid-area: horizontal;
+    background-color: #f9f9f9;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    height: 56px;
+}
+
+.menu-horizontal a{
+    display: inline;
+    padding: 20px;
 }
 
 .main {
     grid-area: contenido;
-    background-color: rgb(196, 196, 68);
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
+.main .grid-video{
+    display: grid;
+    grid-gap: 40px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main .grid-video .video{
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+.main .grid-video .video img{
+    width: 100%;
+}

@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	    <title>Página Principal | YouTube</title>-->
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+	    <title>Página Principal</title>
         <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
         <script src="https://kit.fontawesome.com/4e3619b0a6.js" crossorigin="anonymous"></script>
-        <div class="contenedor active">
+        <div class="contenedor" id="contenedor">
             <header class="header">
                 <div class="contenedor-logo">
                     <button id="btn-menu" class="btn-menu"><i class="fas fa-bars"></i></button>
@@ -29,11 +29,32 @@
                 </div>
             </header>
             <nav class="menu-lateral">
-
+                <a href="#" class="active"><i class="fas fa-home"></i> Inicio </a>
+                <a href="#"><i class="far fa-compass"></i> Explorar </a>
+                <a href="#"><i class="fas fa-folder"></i> Suscripciones </a>
+                <hr>
+                <a href="#"><i class="far fa-thumbs-up"></i>Videos que me gustan</a>
+                <a href="#"><i class="fas fa-history"></i>Historial</a>
+                <a href="#"><i class="far fa-clock"></i>Ver mas tarde</a>
+            </nav>
+            <nav class="menu-horizontal">
+                <a href="#"><i class="far fa-thumbs-up"></i>Videos que me gustan</a>
+                <a href="#"><i class="fas fa-history"></i>Historial</a>
+                <a href="#"><i class="far fa-clock"></i>Ver mas tarde</a>
             </nav>
             <main class="main">
-
+                <div class="grid-video">
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1032/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1072/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1027/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1037/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1023/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1001/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1020/500/300" alt="">contenido</a>
+                    <a href="#" class="video"><img src="https://picsum.photos/id/1029/500/300" alt="">contenido</a>
+                </div>
             </main>
         </div> 
+        <script src="/js/main.js"></script>
     </body>
 </html>
