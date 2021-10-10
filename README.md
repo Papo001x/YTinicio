@@ -9,3 +9,5 @@
 
 ## Despues
 ![Alt text](https://github.com/Papo001x/YTinicio/blob/main/images/despues.png?raw=true "Optional Title")
+
+![Alt text](https://github.com/Papo001x/YTinicio/blob/main/images/vista%202.png?raw=true "Optional Title")
