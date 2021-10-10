@@ -2,19 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
 	    <title>Página Principal</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-
     </head>
     <body>
         <script src="https://kit.fontawesome.com/4e3619b0a6.js" crossorigin="anonymous"></script>
-        <div class="contenedor" id="contenedor">
+        <div class="contenedor active" id="contenedor">
             <header class="header">
                 <div class="contenedor-logo">
                     <button id="btn-menu" class="btn-menu"><i class="fas fa-bars"></i></button>
-                    <a href="#" class="logo"><i class="fas fa-play"></i></i><span>Project</span></a>
+                    <a href="#" class="logo"><i class="fas fa-play"></i></i><span>YouTube</span></a>
                 </div>
                 <div class="barra-busqueda">
                     <input type="text" placeholder="Buscar">
@@ -36,6 +36,15 @@
                 <a href="#"><i class="far fa-thumbs-up"></i>Videos que me gustan</a>
                 <a href="#"><i class="fas fa-history"></i>Historial</a>
                 <a href="#"><i class="far fa-clock"></i>Ver mas tarde</a>
+                <hr>
+                <div class="lista-suscripciones">
+                    <h3>SUSCRIPCIONES</h3>
+                    <a href=""><img src="images/mrbeast foto.jpg"><p>MrBeast</p></a>
+                    <a href=""><img src="images/Pdplogo.jpg"><p>CarlitoP</p></a>
+                    <a href=""><img src="images/labarbie.jpg"><p>Barbie</p></a>
+                    <a href=""><img src="images/descarga (1).jpg"><p>Elvio</p></a>
+                    <a href=""><img src="images/artworks-000517249344-oizyoh-t500x500.jpg"><p>Mariano</p></a>
+                </div>
             </nav>
             <nav class="menu-horizontal">
                 <a href="#">Todo</a>
@@ -50,17 +59,63 @@
             </nav>
             <main class="main">
                 <div class="grid-video">
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1032/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1072/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1027/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1037/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1023/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1001/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1020/500/300" alt="">contenido</a>
-                    <a href="#" class="video"><img src="https://picsum.photos/id/1029/500/300" alt="">contenido</a>
+                    <a href="video.html" class="video"><img src="images/canso.jpg" alt="">
+                        <h3>corro y no me canso</h3>
+                        <p>Mariano05</p>
+                        <p>10k Visitas  </p>
+                        <p>Hace 1 año</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/condor.jpg" alt="">
+                        <h3>Como cancelar desde condor</h3>
+                        <p>ElMamerto24</p>
+                        <p>200k Visitas  </p>
+                        <p>Hace 1 mes</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/cambio.jpg" alt="">
+                        <h3>¿Si me toca con tole cambio de carrera?</h3>
+                        <p>ElPajas</p>
+                        <p>500k Visitas  </p>
+                        <p>Hace 3 años</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/ADIOS.jpg" alt="">
+                        <h3>Como eliminar lol de mi vida</h3>
+                        <p>ElPacifista</p>
+                        <p>800k Visitas </p>
+                        <p>Hace 4 meses</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/dos.jpg" alt="">
+                        <h3>¿2+2 es 4 ? o 5</h3>
+                        <p>ElMatematico</p>
+                        <p>10 Visitas  </p>
+                        <p>Hace 3 minutos</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/hack.jpg" alt="">
+                        <h3>Hack de Dragon city</h3>
+                        <p>El duro</p>
+                        <p>2 Millones  Visitas </p>
+                        <p>Hace 3 meses</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/muerte.jpg" alt="">
+                        <h3>¿Si metiro de un tercer piso me mato?</h3>
+                        <p>ElPajas</p>
+                        <p>500k Visitas  </p>
+                        <p>Hace 3 año</p>
+                    </a>
+                    <a href="video.html" class="video"><img src="images/gentequemuere.jpg" alt="">
+                        <h3>Opening Evangelion</h3>
+                        <p>El1234</p>
+                        <p>5 millones Visitas  </p>
+                        <p>Hace 2 años</p>
+                    </a>
                 </div>
             </main>
         </div> 
         <script src="/js/main.js"></script>
     </body>
+    <footer>
+        <a href="#">Sobre       Prensa </a>
+        <a href="#">Derechos de autor    Contactenos</a>
+        <a href="#">Creadores Anunciar</a>
+        <a href="#">© 2021 Google LLC</a> 
+    </footer>
 </html>
